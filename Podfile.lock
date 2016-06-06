@@ -1,0 +1,12 @@
+PODS:
+  - BeaconManager (0.4)
+
+DEPENDENCIES:
+  - BeaconManager
+
+SPEC CHECKSUMS:
+  BeaconManager: bdbe53e3484b082170ef7ba6f92c44ef3719a7f6
+
+PODFILE CHECKSUM: e36c3b5f25366c9d7be1a79bba65417d5b042805
+
+COCOAPODS: 1.0.0

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>BeaconManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-reelyApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-reelyAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-reelyAppUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>07A418CF98EDFFE4BE855920767EFE39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>248DF671D9F41A019C7A15CD6ECA2A7B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61C9D497F808891F42251D4C234782DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F91F0819AF5FB80649D479080722DF91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

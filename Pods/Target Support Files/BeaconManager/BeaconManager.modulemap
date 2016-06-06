@@ -1,0 +1,6 @@
+framework module BeaconManager {
+  umbrella header "BeaconManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

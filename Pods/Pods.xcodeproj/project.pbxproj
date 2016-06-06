@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0108FF6FF6AE80077D63DBC5916D3651 /* Pods-reelyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D33E798AC6DFE595400E89E00C68771A /* Pods-reelyApp-dummy.m */; };
+		0A54BD4AC2FAA2D2FC6A84D91AD7748C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84817643F482E561AC1D65E890AF23FE /* CoreBluetooth.framework */; };
+		22E69EEA025DCCCF3FFCE252896774CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */; };
+		2B15EBB339B9858B2CC2F20A9CE391E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */; };
+		2FC50BC914AD786DE0021D52F23CBD44 /* BeaconManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAA8B352AEA8EFC27250D4C43359D68 /* BeaconManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F6C8354977C8E0A5DFD83378103D9F6 /* RAIBeacon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0277406F03586A575E54CC98DD177837 /* RAIBeacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484796EB541C0630D8F9D866F279266C /* RABeacons.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F4B08F21A7757B8DF51907C314165D /* RABeacons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E91BCDE257B77BA1A27A193EB64734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */; };
+		571A1098840C341815E4890F064D1CCC /* RAIBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 913F5B627424211428825F017B4C721B /* RAIBeacon.m */; };
+		602622DD0CCFF066493A91B8DFCBEB05 /* RABeacon.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EA733558CA4E363D2DB4D02EE3B669 /* RABeacon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70E8C1EDD2602FC91E31D0AC545990E8 /* RABeaconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 44883C0F525E508DE56A7F7EDF5380ED /* RABeaconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8356B33127BA46375839AC065B781192 /* Pods-reelyAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9412AE836F0B2C59F54337A9F3D60DB8 /* Pods-reelyAppTests-dummy.m */; };
+		837570B2062CBED3111E83A1FC458A71 /* RABeaconService.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B8721A8672896ABB121B9719AFEEA2 /* RABeaconService.m */; };
+		83B0F7BC481DDA5CD64A7B8AFD21989B /* RAIBeaconService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579E3668026868E30BAE4880F992195 /* RAIBeaconService.m */; };
+		8604FAE17E58F58DE82A12E02D74D848 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DC6FF98EA0F5147795354233A3957F /* UIKit.framework */; };
+		8B22D8B848FFB9161597E17BCA5C1887 /* RAIBeaconService.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A880E9B33A05DAA13F68DA24957541 /* RAIBeaconService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F704921CB3075D51E491290603C136C /* RABeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5683D8718077D82F9D1E4F69DE71E04 /* RABeaconManager.m */; };
+		A6A1C9733C77B41A9C1CF886F8BB6313 /* Pods-reelyAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC05D031819879DE667654BA6DA757FD /* Pods-reelyAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF55C3917B9BB5CB50C0A05E1DE1822 /* Pods-reelyApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5BD9877A015A0E9485A600D8F3D3E /* Pods-reelyApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B15E9F5E0E296C11FECF4B111D91F956 /* Pods-reelyAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D7B41A2B4595566E280ABD5AF801D /* Pods-reelyAppUITests-dummy.m */; };
+		C371B4F524115E7F91083ABBC092E5A3 /* RABeaconService.h in Headers */ = {isa = PBXBuildFile; fileRef = B48378DADD017AEDDE73B9CA58C90E06 /* RABeaconService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B59B134AC6CB56060726661522053D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */; };
+		DE6EFBAF86521675ED10BB6E4A973AE6 /* RABeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = AD29E4287A95B0FF95991D433B557FE0 /* RABeacon.m */; };
+		E0B3AB3898DE5013078CF784A978FAE4 /* BeaconManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37885A710A359F5B117EC6FFFCDF6C47 /* BeaconManager-dummy.m */; };
+		E4FA50D2DD0549FE49D69D4CF09FF164 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D18117DD053B93DAEB16C108F91D41 /* CoreLocation.framework */; };
+		EFFCAB528EB67DC6B409C2A8885D61FB /* Pods-reelyAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B12D2C6FD59FA4C1B99EE0B32CAA5B /* Pods-reelyAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B899AC4C210D3AF76712EB646E46A76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F91F0819AF5FB80649D479080722DF91;
+			remoteInfo = BeaconManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010F6EC5ECCEF0394C3CAAE7F4C3C798 /* Pods-reelyAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reelyAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01A880E9B33A05DAA13F68DA24957541 /* RAIBeaconService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAIBeaconService.h; path = Bluetooth/RAIBeaconService.h; sourceTree = "<group>"; };
+		01C0D355DA412963B7BD79DE07C17F8A /* Pods-reelyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0277406F03586A575E54CC98DD177837 /* RAIBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RAIBeacon.h; path = Bluetooth/RAIBeacon.h; sourceTree = "<group>"; };
+		07A37B975EB5169C6BAE2C1BB4A8A321 /* Pods-reelyAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-reelyAppTests.modulemap"; sourceTree = "<group>"; };
+		09AE8855612A5389420FCDF482E55031 /* Pods-reelyAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reelyAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F44FBB9794B291AFC303FF17A100FB8 /* Pods-reelyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyApp.release.xcconfig"; sourceTree = "<group>"; };
+		0F45B02AF51758BA637E18BFCE84D704 /* Pods-reelyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1143D5994A0688B440DD1904E128D2D8 /* Pods_reelyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reelyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CBA43987BB008D4EE462CF5E007F9D /* Pods-reelyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1579E3668026868E30BAE4880F992195 /* RAIBeaconService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAIBeaconService.m; path = Bluetooth/RAIBeaconService.m; sourceTree = "<group>"; };
+		1ADE1EF52EF75C5B3E3F1C2ACD1156C5 /* Pods-reelyAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reelyAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		207757F575499F93DD6BB3DF0DC3C20A /* Pods-reelyAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		22EA733558CA4E363D2DB4D02EE3B669 /* RABeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABeacon.h; path = Bluetooth/RABeacon.h; sourceTree = "<group>"; };
+		2CAA8B352AEA8EFC27250D4C43359D68 /* BeaconManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaconManager-umbrella.h"; sourceTree = "<group>"; };
+		2D527CFB836FC074CF44233E9FADF101 /* Pods-reelyAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyAppUITests-resources.sh"; sourceTree = "<group>"; };
+		2FD0F29F03B31103D5A0BE0E375167D8 /* BeaconManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BeaconManager.xcconfig; sourceTree = "<group>"; };
+		30EA600C7185B945A92981419B1FF659 /* Pods-reelyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		320FCFB3121FA297A128EF0CE0DB51FD /* Pods-reelyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reelyApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		37885A710A359F5B117EC6FFFCDF6C47 /* BeaconManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BeaconManager-dummy.m"; sourceTree = "<group>"; };
+		40B8721A8672896ABB121B9719AFEEA2 /* RABeaconService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABeaconService.m; path = Bluetooth/RABeaconService.m; sourceTree = "<group>"; };
+		4280EBB7643613F0B6BAD37A59270865 /* Pods-reelyAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		43F4B08F21A7757B8DF51907C314165D /* RABeacons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABeacons.h; path = Bluetooth/RABeacons.h; sourceTree = "<group>"; };
+		44883C0F525E508DE56A7F7EDF5380ED /* RABeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABeaconManager.h; path = Bluetooth/RABeaconManager.h; sourceTree = "<group>"; };
+		50323A9D843B3AA8454020C0D4C91E3D /* Pods-reelyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyApp-frameworks.sh"; sourceTree = "<group>"; };
+		512623ED23C7CE04795E00ED86C8CD6E /* BeaconManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BeaconManager.modulemap; sourceTree = "<group>"; };
+		54C5BD9877A015A0E9485A600D8F3D3E /* Pods-reelyApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reelyApp-umbrella.h"; sourceTree = "<group>"; };
+		55D18117DD053B93DAEB16C108F91D41 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		58B12D2C6FD59FA4C1B99EE0B32CAA5B /* Pods-reelyAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reelyAppTests-umbrella.h"; sourceTree = "<group>"; };
+		5F00D02F082C01015BC6CE37D2578569 /* Pods-reelyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-reelyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66380FDBB3C4D8E86ED8883AC94AAEDD /* Pods-reelyAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-reelyAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		679D7B41A2B4595566E280ABD5AF801D /* Pods-reelyAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reelyAppUITests-dummy.m"; sourceTree = "<group>"; };
+		6E9856671651D1C88340774803AE9347 /* BeaconManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeaconManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA47E83C14BD4E663973882E026632F /* Pods_reelyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reelyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BEC50C7B0C7D2F41CFB585F90A58EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8384AD05BBF77F85EF084E1294760FCC /* Pods-reelyApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-reelyApp.modulemap"; sourceTree = "<group>"; };
+		84817643F482E561AC1D65E890AF23FE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		89080D053F9921593A04385BED8870AD /* Pods-reelyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyApp-resources.sh"; sourceTree = "<group>"; };
+		913F5B627424211428825F017B4C721B /* RAIBeacon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RAIBeacon.m; path = Bluetooth/RAIBeacon.m; sourceTree = "<group>"; };
+		937BF875F083D061A031B559F9490354 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9412AE836F0B2C59F54337A9F3D60DB8 /* Pods-reelyAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reelyAppTests-dummy.m"; sourceTree = "<group>"; };
+		9D69E3980CC54DFBE6CECE3CF1934C85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15E0B21CC491072820F0CC318B5FA57 /* Pods_reelyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reelyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DC6FF98EA0F5147795354233A3957F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A782D14ED3081DF8F62AF20736AD2D5C /* Pods-reelyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-reelyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9A35D71606626F24BB7277E8E5FCD57 /* Pods-reelyAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-reelyAppTests-resources.sh"; sourceTree = "<group>"; };
+		AD29E4287A95B0FF95991D433B557FE0 /* RABeacon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABeacon.m; path = Bluetooth/RABeacon.m; sourceTree = "<group>"; };
+		B48378DADD017AEDDE73B9CA58C90E06 /* RABeaconService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RABeaconService.h; path = Bluetooth/RABeaconService.h; sourceTree = "<group>"; };
+		B6B8FF44DF76D2281F1C3B2F86F7E269 /* BeaconManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeaconManager-prefix.pch"; sourceTree = "<group>"; };
+		D276EBF267B9B60D0989F6C087D0C16D /* Pods-reelyAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-reelyAppUITests.modulemap"; sourceTree = "<group>"; };
+		D33E798AC6DFE595400E89E00C68771A /* Pods-reelyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-reelyApp-dummy.m"; sourceTree = "<group>"; };
+		EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5683D8718077D82F9D1E4F69DE71E04 /* RABeaconManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RABeaconManager.m; path = Bluetooth/RABeaconManager.m; sourceTree = "<group>"; };
+		FC05D031819879DE667654BA6DA757FD /* Pods-reelyAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-reelyAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		FC0FED6E08C52967F28997F7CAD52E11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6C3BCBCFB09C30C6397694FC8735CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E69EEA025DCCCF3FFCE252896774CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBA4EB16F5E0F7E94CFDB05518EBC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E91BCDE257B77BA1A27A193EB64734 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A115FDBF535101AD8E363D437F6E5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B59B134AC6CB56060726661522053D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1A5A0E7A8D6790EF7D56091B05B776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A54BD4AC2FAA2D2FC6A84D91AD7748C /* CoreBluetooth.framework in Frameworks */,
+				E4FA50D2DD0549FE49D69D4CF09FF164 /* CoreLocation.framework in Frameworks */,
+				2B15EBB339B9858B2CC2F20A9CE391E3 /* Foundation.framework in Frameworks */,
+				8604FAE17E58F58DE82A12E02D74D848 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2240C806A0E145D5AD0381C0619AC8FF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2240C806A0E145D5AD0381C0619AC8FF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				84817643F482E561AC1D65E890AF23FE /* CoreBluetooth.framework */,
+				55D18117DD053B93DAEB16C108F91D41 /* CoreLocation.framework */,
+				EF4FA0E175C1AA68597B1DE64C5DA225 /* Foundation.framework */,
+				A3DC6FF98EA0F5147795354233A3957F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		249AA335870DDC16CB973CA0AA18943E /* Pods-reelyApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC0FED6E08C52967F28997F7CAD52E11 /* Info.plist */,
+				8384AD05BBF77F85EF084E1294760FCC /* Pods-reelyApp.modulemap */,
+				5F00D02F082C01015BC6CE37D2578569 /* Pods-reelyApp-acknowledgements.markdown */,
+				320FCFB3121FA297A128EF0CE0DB51FD /* Pods-reelyApp-acknowledgements.plist */,
+				D33E798AC6DFE595400E89E00C68771A /* Pods-reelyApp-dummy.m */,
+				50323A9D843B3AA8454020C0D4C91E3D /* Pods-reelyApp-frameworks.sh */,
+				89080D053F9921593A04385BED8870AD /* Pods-reelyApp-resources.sh */,
+				54C5BD9877A015A0E9485A600D8F3D3E /* Pods-reelyApp-umbrella.h */,
+				30EA600C7185B945A92981419B1FF659 /* Pods-reelyApp.debug.xcconfig */,
+				0F44FBB9794B291AFC303FF17A100FB8 /* Pods-reelyApp.release.xcconfig */,
+			);
+			name = "Pods-reelyApp";
+			path = "Target Support Files/Pods-reelyApp";
+			sourceTree = "<group>";
+		};
+		4CD44DF82EEDB2C0506D0F714E1CD489 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				249AA335870DDC16CB973CA0AA18943E /* Pods-reelyApp */,
+				66772152E39EA29B0141B1D98BFCD4D2 /* Pods-reelyAppTests */,
+				A3001773B2108D7BCC0492A27C172D78 /* Pods-reelyAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		52474CFACBD69904C48470B6C6F8DCFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				512623ED23C7CE04795E00ED86C8CD6E /* BeaconManager.modulemap */,
+				2FD0F29F03B31103D5A0BE0E375167D8 /* BeaconManager.xcconfig */,
+				37885A710A359F5B117EC6FFFCDF6C47 /* BeaconManager-dummy.m */,
+				B6B8FF44DF76D2281F1C3B2F86F7E269 /* BeaconManager-prefix.pch */,
+				2CAA8B352AEA8EFC27250D4C43359D68 /* BeaconManager-umbrella.h */,
+				937BF875F083D061A031B559F9490354 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BeaconManager";
+			sourceTree = "<group>";
+		};
+		66772152E39EA29B0141B1D98BFCD4D2 /* Pods-reelyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				80BEC50C7B0C7D2F41CFB585F90A58EF /* Info.plist */,
+				07A37B975EB5169C6BAE2C1BB4A8A321 /* Pods-reelyAppTests.modulemap */,
+				010F6EC5ECCEF0394C3CAAE7F4C3C798 /* Pods-reelyAppTests-acknowledgements.markdown */,
+				1ADE1EF52EF75C5B3E3F1C2ACD1156C5 /* Pods-reelyAppTests-acknowledgements.plist */,
+				9412AE836F0B2C59F54337A9F3D60DB8 /* Pods-reelyAppTests-dummy.m */,
+				4280EBB7643613F0B6BAD37A59270865 /* Pods-reelyAppTests-frameworks.sh */,
+				A9A35D71606626F24BB7277E8E5FCD57 /* Pods-reelyAppTests-resources.sh */,
+				58B12D2C6FD59FA4C1B99EE0B32CAA5B /* Pods-reelyAppTests-umbrella.h */,
+				0F45B02AF51758BA637E18BFCE84D704 /* Pods-reelyAppTests.debug.xcconfig */,
+				A782D14ED3081DF8F62AF20736AD2D5C /* Pods-reelyAppTests.release.xcconfig */,
+			);
+			name = "Pods-reelyAppTests";
+			path = "Target Support Files/Pods-reelyAppTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				806F72877EBCE7EE1456E18FA2639831 /* Pods */,
+				AFFA5BA7BD481F76A94001AE808B5B7C /* Products */,
+				4CD44DF82EEDB2C0506D0F714E1CD489 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		806F72877EBCE7EE1456E18FA2639831 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				922528B046BA0AD5D38DACC82086FE0B /* BeaconManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		922528B046BA0AD5D38DACC82086FE0B /* BeaconManager */ = {
+			isa = PBXGroup;
+			children = (
+				22EA733558CA4E363D2DB4D02EE3B669 /* RABeacon.h */,
+				AD29E4287A95B0FF95991D433B557FE0 /* RABeacon.m */,
+				44883C0F525E508DE56A7F7EDF5380ED /* RABeaconManager.h */,
+				F5683D8718077D82F9D1E4F69DE71E04 /* RABeaconManager.m */,
+				43F4B08F21A7757B8DF51907C314165D /* RABeacons.h */,
+				B48378DADD017AEDDE73B9CA58C90E06 /* RABeaconService.h */,
+				40B8721A8672896ABB121B9719AFEEA2 /* RABeaconService.m */,
+				0277406F03586A575E54CC98DD177837 /* RAIBeacon.h */,
+				913F5B627424211428825F017B4C721B /* RAIBeacon.m */,
+				01A880E9B33A05DAA13F68DA24957541 /* RAIBeaconService.h */,
+				1579E3668026868E30BAE4880F992195 /* RAIBeaconService.m */,
+				52474CFACBD69904C48470B6C6F8DCFF /* Support Files */,
+			);
+			path = BeaconManager;
+			sourceTree = "<group>";
+		};
+		A3001773B2108D7BCC0492A27C172D78 /* Pods-reelyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D69E3980CC54DFBE6CECE3CF1934C85 /* Info.plist */,
+				D276EBF267B9B60D0989F6C087D0C16D /* Pods-reelyAppUITests.modulemap */,
+				09AE8855612A5389420FCDF482E55031 /* Pods-reelyAppUITests-acknowledgements.markdown */,
+				66380FDBB3C4D8E86ED8883AC94AAEDD /* Pods-reelyAppUITests-acknowledgements.plist */,
+				679D7B41A2B4595566E280ABD5AF801D /* Pods-reelyAppUITests-dummy.m */,
+				207757F575499F93DD6BB3DF0DC3C20A /* Pods-reelyAppUITests-frameworks.sh */,
+				2D527CFB836FC074CF44233E9FADF101 /* Pods-reelyAppUITests-resources.sh */,
+				FC05D031819879DE667654BA6DA757FD /* Pods-reelyAppUITests-umbrella.h */,
+				12CBA43987BB008D4EE462CF5E007F9D /* Pods-reelyAppUITests.debug.xcconfig */,
+				01C0D355DA412963B7BD79DE07C17F8A /* Pods-reelyAppUITests.release.xcconfig */,
+			);
+			name = "Pods-reelyAppUITests";
+			path = "Target Support Files/Pods-reelyAppUITests";
+			sourceTree = "<group>";
+		};
+		AFFA5BA7BD481F76A94001AE808B5B7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E9856671651D1C88340774803AE9347 /* BeaconManager.framework */,
+				1143D5994A0688B440DD1904E128D2D8 /* Pods_reelyApp.framework */,
+				A15E0B21CC491072820F0CC318B5FA57 /* Pods_reelyAppTests.framework */,
+				6EA47E83C14BD4E663973882E026632F /* Pods_reelyAppUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40DF38CF5CC86A4E99A5E47FCB17A859 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC50BC914AD786DE0021D52F23CBD44 /* BeaconManager-umbrella.h in Headers */,
+				602622DD0CCFF066493A91B8DFCBEB05 /* RABeacon.h in Headers */,
+				70E8C1EDD2602FC91E31D0AC545990E8 /* RABeaconManager.h in Headers */,
+				484796EB541C0630D8F9D866F279266C /* RABeacons.h in Headers */,
+				C371B4F524115E7F91083ABBC092E5A3 /* RABeaconService.h in Headers */,
+				3F6C8354977C8E0A5DFD83378103D9F6 /* RAIBeacon.h in Headers */,
+				8B22D8B848FFB9161597E17BCA5C1887 /* RAIBeaconService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED0C692C1D7AF1EF8D387660D5A9A00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF55C3917B9BB5CB50C0A05E1DE1822 /* Pods-reelyApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749E869B2465B08746C611ADBA14A975 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A1C9733C77B41A9C1CF886F8BB6313 /* Pods-reelyAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D103A2CA2D629959CF21E52E84DC201A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFCAB528EB67DC6B409C2A8885D61FB /* Pods-reelyAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07A418CF98EDFFE4BE855920767EFE39 /* Pods-reelyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA263E24A754A7AC9EAF11D90AFA192B /* Build configuration list for PBXNativeTarget "Pods-reelyAppUITests" */;
+			buildPhases = (
+				4AAC99D670489A5B52341AF93DA3C1EB /* Sources */,
+				1F6C3BCBCFB09C30C6397694FC8735CF /* Frameworks */,
+				749E869B2465B08746C611ADBA14A975 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-reelyAppUITests";
+			productName = "Pods-reelyAppUITests";
+			productReference = 6EA47E83C14BD4E663973882E026632F /* Pods_reelyAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		248DF671D9F41A019C7A15CD6ECA2A7B /* Pods-reelyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8609DDF120C565ACA9E9D8430CE4AC9 /* Build configuration list for PBXNativeTarget "Pods-reelyApp" */;
+			buildPhases = (
+				360513A0F8217659D83E1EC3BE233321 /* Sources */,
+				6CBA4EB16F5E0F7E94CFDB05518EBC1F /* Frameworks */,
+				4ED0C692C1D7AF1EF8D387660D5A9A00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				552908670F78B882C9FBDDDF5C9BAAE3 /* PBXTargetDependency */,
+			);
+			name = "Pods-reelyApp";
+			productName = "Pods-reelyApp";
+			productReference = 1143D5994A0688B440DD1904E128D2D8 /* Pods_reelyApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61C9D497F808891F42251D4C234782DC /* Pods-reelyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0AF4421E70220B9337F7BA95A3AA20B /* Build configuration list for PBXNativeTarget "Pods-reelyAppTests" */;
+			buildPhases = (
+				AD8A434C6943748BD75CE2B770975EBD /* Sources */,
+				8A115FDBF535101AD8E363D437F6E5DA /* Frameworks */,
+				D103A2CA2D629959CF21E52E84DC201A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-reelyAppTests";
+			productName = "Pods-reelyAppTests";
+			productReference = A15E0B21CC491072820F0CC318B5FA57 /* Pods_reelyAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F91F0819AF5FB80649D479080722DF91 /* BeaconManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCBBA1B866E1096A36F7B6B4C5A6877 /* Build configuration list for PBXNativeTarget "BeaconManager" */;
+			buildPhases = (
+				1FEB8DCD756994012A16BDAED716EF40 /* Sources */,
+				9F1A5A0E7A8D6790EF7D56091B05B776 /* Frameworks */,
+				40DF38CF5CC86A4E99A5E47FCB17A859 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconManager;
+			productName = BeaconManager;
+			productReference = 6E9856671651D1C88340774803AE9347 /* BeaconManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AFFA5BA7BD481F76A94001AE808B5B7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F91F0819AF5FB80649D479080722DF91 /* BeaconManager */,
+				248DF671D9F41A019C7A15CD6ECA2A7B /* Pods-reelyApp */,
+				61C9D497F808891F42251D4C234782DC /* Pods-reelyAppTests */,
+				07A418CF98EDFFE4BE855920767EFE39 /* Pods-reelyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEB8DCD756994012A16BDAED716EF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B3AB3898DE5013078CF784A978FAE4 /* BeaconManager-dummy.m in Sources */,
+				DE6EFBAF86521675ED10BB6E4A973AE6 /* RABeacon.m in Sources */,
+				8F704921CB3075D51E491290603C136C /* RABeaconManager.m in Sources */,
+				837570B2062CBED3111E83A1FC458A71 /* RABeaconService.m in Sources */,
+				571A1098840C341815E4890F064D1CCC /* RAIBeacon.m in Sources */,
+				83B0F7BC481DDA5CD64A7B8AFD21989B /* RAIBeaconService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360513A0F8217659D83E1EC3BE233321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0108FF6FF6AE80077D63DBC5916D3651 /* Pods-reelyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AAC99D670489A5B52341AF93DA3C1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15E9F5E0E296C11FECF4B111D91F956 /* Pods-reelyAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8A434C6943748BD75CE2B770975EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8356B33127BA46375839AC065B781192 /* Pods-reelyAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		552908670F78B882C9FBDDDF5C9BAAE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BeaconManager;
+			target = F91F0819AF5FB80649D479080722DF91 /* BeaconManager */;
+			targetProxy = B899AC4C210D3AF76712EB646E46A76F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		157260A790B7C9D013B2E6EB91E9F29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CBA43987BB008D4EE462CF5E007F9D /* Pods-reelyAppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71CCA940A4AFEC81EB2F5F2804D6CA04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F44FBB9794B291AFC303FF17A100FB8 /* Pods-reelyApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyApp/Pods-reelyApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89F4D5ED05F3CBAE5725C58600C13CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F45B02AF51758BA637E18BFCE84D704 /* Pods-reelyAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyAppTests/Pods-reelyAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C88D46197EC52D085740C231162178B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD0F29F03B31103D5A0BE0E375167D8 /* BeaconManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BeaconManager/BeaconManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BeaconManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "Target Support Files/BeaconManager/BeaconManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BeaconManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C77BF36E28BE7F19486321F52CCDACC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30EA600C7185B945A92981419B1FF659 /* Pods-reelyApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyApp/Pods-reelyApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7A1B5D26A84522C953F620BA17F82DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD0F29F03B31103D5A0BE0E375167D8 /* BeaconManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BeaconManager/BeaconManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BeaconManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				MODULEMAP_FILE = "Target Support Files/BeaconManager/BeaconManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BeaconManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC3355386AAA50EA84E1225BF8B5A914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A782D14ED3081DF8F62AF20736AD2D5C /* Pods-reelyAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyAppTests/Pods-reelyAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7CD006263BFE138F37783F46AA5F40A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C0D355DA412963B7BD79DE07C17F8A /* Pods-reelyAppUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-reelyAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_reelyAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CCBBA1B866E1096A36F7B6B4C5A6877 /* Build configuration list for PBXNativeTarget "BeaconManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C88D46197EC52D085740C231162178B /* Debug */,
+				C7A1B5D26A84522C953F620BA17F82DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8609DDF120C565ACA9E9D8430CE4AC9 /* Build configuration list for PBXNativeTarget "Pods-reelyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C77BF36E28BE7F19486321F52CCDACC0 /* Debug */,
+				71CCA940A4AFEC81EB2F5F2804D6CA04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0AF4421E70220B9337F7BA95A3AA20B /* Build configuration list for PBXNativeTarget "Pods-reelyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F4D5ED05F3CBAE5725C58600C13CD1 /* Debug */,
+				CC3355386AAA50EA84E1225BF8B5A914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA263E24A754A7AC9EAF11D90AFA192B /* Build configuration list for PBXNativeTarget "Pods-reelyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157260A790B7C9D013B2E6EB91E9F29E /* Debug */,
+				D7CD006263BFE138F37783F46AA5F40A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

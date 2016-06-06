@@ -1,0 +1,6 @@
+framework module Pods_reelyAppTests {
+  umbrella header "Pods-reelyAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

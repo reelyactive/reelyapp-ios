@@ -1,0 +1,6 @@
+framework module Pods_reelyApp {
+  umbrella header "Pods-reelyApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
