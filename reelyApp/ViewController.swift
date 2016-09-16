@@ -135,5 +135,6 @@ class ViewController: UIViewController {
 //        eddystoneAdvertiser.stopAdvertising();
 //        kill(getpid(), SIGINT);
     }
+    
 }
 
