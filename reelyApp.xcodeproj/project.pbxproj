@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		36D28A3787DF312E05652C14 /* Pods_reelyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC747DB10AE2A47CF6D4B116 /* Pods_reelyAppUITests.framework */; };
+		8B006FB31D8B40AF005BD956 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B006FB21D8B40AF005BD956 /* UserData.plist */; };
+		8B006FB51D8B4145005BD956 /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B006FB41D8B4145005BD956 /* UserHandler.swift */; };
+		8B006FB71D8B581D005BD956 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B006FB61D8B581D005BD956 /* ProfileViewController.swift */; };
+		8BF55BC11D89C56B00CD2D49 /* Eddystone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF55BC01D89C56B00CD2D49 /* Eddystone.swift */; };
 		B713957F1D0375E50042CBC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713957E1D0375E50042CBC1 /* AppDelegate.swift */; };
 		B71395811D0375E50042CBC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71395801D0375E50042CBC1 /* ViewController.swift */; };
 		B71395841D0375E50042CBC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71395821D0375E50042CBC1 /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 		4D47EEBD64401CF413BCE4C4 /* Pods-reelyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		778F478BE4D86137EC6FC388 /* Pods_reelyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reelyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A68BC1008439193D6E7C11 /* Pods-reelyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reelyApp/Pods-reelyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8B006FB21D8B40AF005BD956 /* UserData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
+		8B006FB41D8B4145005BD956 /* UserHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
+		8B006FB61D8B581D005BD956 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8BF55BC01D89C56B00CD2D49 /* Eddystone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eddystone.swift; sourceTree = "<group>"; };
 		AA87D06A081E78F467109982 /* Pods-reelyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-reelyApp/Pods-reelyApp.release.xcconfig"; sourceTree = "<group>"; };
 		AF0F59118879CE981E49AAD8 /* Pods-reelyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B713957B1D0375E50042CBC1 /* reelyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reelyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +141,10 @@
 				B713958A1D0375E50042CBC1 /* LaunchScreen.storyboard */,
 				B713958D1D0375E50042CBC1 /* Info.plist */,
 				B71395851D0375E50042CBC1 /* reelyApp.xcdatamodeld */,
+				8BF55BC01D89C56B00CD2D49 /* Eddystone.swift */,
+				8B006FB21D8B40AF005BD956 /* UserData.plist */,
+				8B006FB41D8B4145005BD956 /* UserHandler.swift */,
+				8B006FB61D8B581D005BD956 /* ProfileViewController.swift */,
 			);
 			path = reelyApp;
 			sourceTree = "<group>";
@@ -290,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B713958C1D0375E50042CBC1 /* LaunchScreen.storyboard in Resources */,
+				8B006FB31D8B40AF005BD956 /* UserData.plist in Resources */,
 				B71395891D0375E50042CBC1 /* Assets.xcassets in Resources */,
 				B71395841D0375E50042CBC1 /* Main.storyboard in Resources */,
 			);
@@ -439,7 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B006FB71D8B581D005BD956 /* ProfileViewController.swift in Sources */,
 				B71395811D0375E50042CBC1 /* ViewController.swift in Sources */,
+				8BF55BC11D89C56B00CD2D49 /* Eddystone.swift in Sources */,
+				8B006FB51D8B4145005BD956 /* UserHandler.swift in Sources */,
 				B71395871D0375E50042CBC1 /* reelyApp.xcdatamodeld in Sources */,
 				B713957F1D0375E50042CBC1 /* AppDelegate.swift in Sources */,
 			);

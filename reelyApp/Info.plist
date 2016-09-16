@@ -19,9 +19,15 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © reelyActive 2016</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app needs location so it your device can be detect anonymously by reelyActive's technology. If you keep the app in background, it will keep advertising anonymously.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The app needs location so it your device can be detect anonymously by reelyActive's technology. If you keep the app in background, it will keep advertising anonymously.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>
@@ -44,8 +50,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © reelyActive 2016</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
