@@ -55,7 +55,7 @@ class Product {
             "@id": "product",
             "@type": "schema:Product",
             "schema:name": "reelyApp for iOS",
-            "schema:url": "https://play.google.com/store/apps/details?id=com.reelyactive.reelyapp",
+            "schema:url": "https://itunes.apple.com/br/app/reelyapp-for-ios/id1121042765",
             "schema:image": "https://s3.amazonaws.com/reelyimages/reelyapp.png",
             "schema:manufacturer": [
                 "@type": "schema:Organization",
