@@ -11,8 +11,8 @@ import CoreBluetooth
 
 class EddystoneAdvertiser: NSObject, CBPeripheralManagerDelegate {
     let reelyAnonymousUUID = "7265656C-7941-7070-2066-6f7220694f53";
-    let reelyAnonymousStoryId = "reelyio";
     let PREFIX = "Story ID ";
+    var storyId = "reelyio";
     
     var manager: CBPeripheralManager!;
     
@@ -28,7 +28,7 @@ class EddystoneAdvertiser: NSObject, CBPeripheralManagerDelegate {
         print("peripheralManagerDidUpdateState", peripheral)
         
         if (peripheral.state == CBPeripheralManagerState.PoweredOn) {
-            let uuidStr = generateUUID(reelyAnonymousStoryId); // 53746f72-7920-4944-2072-65656c79696f
+            let uuidStr = generateUUID(self.storyId); // 53746f72-7920-4944-2072-65656c79696f
             
             peripheral.startAdvertising([
                 CBAdvertisementDataLocalNameKey: "UUID-URL",

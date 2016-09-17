@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         self.barnowlImage.layer.borderWidth = 12;
         self.barnowlImage.layer.borderColor = UIColor(red:0.22, green:0.55, blue:0.71, alpha:1.00).CGColor;
         updateUI();
+//        userHandler.uploadImage();
         
     }
     
@@ -107,28 +108,45 @@ class ViewController: UIViewController {
     }
     
     func startAdvertising() {
+        let person = Person(givenName: userHandler.getGivenName(), familyName: userHandler.getFamilyName(), imageUrl: userHandler.getImageUrl());
+        let requestBody = StoryRequestBody();
+        requestBody.setPerson(person);
+        print("STORY TO JSON", requestBody.toRawJson())
+        let silo = Silo();
+        silo.register(requestBody, completion: {(storyId: String?) -> Void in
+            print("STORY ID", storyId)
+            var id = storyId;
+            if (id == nil) {
+                id = "reelyio";
+            }
+            
+            let reelyUUID = self.eddystoneAdvertiser.generateUUID(id!);
+            self.eddystoneAdvertiser.storyId = storyId!;
+            
+            self.beaconManager.peripheralName = self.peripheralName;
+            self.beaconManager.peripheralServiceUUID = reelyUUID;
+            
+            if (self.beaconManager.beaconServices.count != 1) {
+                self.beaconManager.removeAllServices()
+            }
+            
+            self.beaconManager.advertisePeripheralWhenBeaconDetected = true;
+            
+            let uuid = NSUUID(UUIDString: reelyUUID)
+            let beaconService: RABeaconService = RABeaconService(name: self.peripheralName, uuid: uuid!);
+            
+            //        print(beaconService.serviceUUID)
+            //        print(beaconManager.peripheralServiceUUID)
+            
+            self.beaconManager.addBeaconService(beaconService);
+            self.beaconManager.setBeaconDetection(true, iBeacons: false, inBackground: true);
+            self.beaconManager.startDebuggingBeacon();
+            //        eddystoneAdvertiser.startAdvertising()
+        });
         
-        let reelyUUID = eddystoneAdvertiser.generateUUID("reelyio");
+
         
-        beaconManager.peripheralName = peripheralName;
-        beaconManager.peripheralServiceUUID = reelyUUID;
-        
-        if (beaconManager.beaconServices.count != 1) {
-            beaconManager.removeAllServices()
-        }
-        
-        beaconManager.advertisePeripheralWhenBeaconDetected = true;
-        
-        let uuid = NSUUID(UUIDString: reelyUUID)
-        let beaconService: RABeaconService = RABeaconService(name: peripheralName, uuid: uuid!);
-        
-//        print(beaconService.serviceUUID)
-//        print(beaconManager.peripheralServiceUUID)
-        
-        beaconManager.addBeaconService(beaconService);
-        beaconManager.setBeaconDetection(true, iBeacons: false, inBackground: true);
-        beaconManager.startDebuggingBeacon();
-//        eddystoneAdvertiser.startAdvertising()
+
     }
     
     func stopAdvertising() {

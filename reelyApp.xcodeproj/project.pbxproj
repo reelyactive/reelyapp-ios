@@ -11,6 +11,8 @@
 		8B006FB31D8B40AF005BD956 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B006FB21D8B40AF005BD956 /* UserData.plist */; };
 		8B006FB51D8B4145005BD956 /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B006FB41D8B4145005BD956 /* UserHandler.swift */; };
 		8B006FB71D8B581D005BD956 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B006FB61D8B581D005BD956 /* ProfileViewController.swift */; };
+		8BD61E181D8C3EE800B96081 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD61E171D8C3EE800B96081 /* Story.swift */; };
+		8BD61E1A1D8D87D100B96081 /* GoogleCloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD61E191D8D87D100B96081 /* GoogleCloudStorage.swift */; };
 		8BF55BC11D89C56B00CD2D49 /* Eddystone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF55BC01D89C56B00CD2D49 /* Eddystone.swift */; };
 		B713957F1D0375E50042CBC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713957E1D0375E50042CBC1 /* AppDelegate.swift */; };
 		B71395811D0375E50042CBC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71395801D0375E50042CBC1 /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		8B006FB21D8B40AF005BD956 /* UserData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
 		8B006FB41D8B4145005BD956 /* UserHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
 		8B006FB61D8B581D005BD956 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8BD61E171D8C3EE800B96081 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		8BD61E191D8D87D100B96081 /* GoogleCloudStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCloudStorage.swift; sourceTree = "<group>"; };
 		8BF55BC01D89C56B00CD2D49 /* Eddystone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eddystone.swift; sourceTree = "<group>"; };
 		AA87D06A081E78F467109982 /* Pods-reelyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-reelyApp/Pods-reelyApp.release.xcconfig"; sourceTree = "<group>"; };
 		AF0F59118879CE981E49AAD8 /* Pods-reelyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reelyAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				8B006FB21D8B40AF005BD956 /* UserData.plist */,
 				8B006FB41D8B4145005BD956 /* UserHandler.swift */,
 				8B006FB61D8B581D005BD956 /* ProfileViewController.swift */,
+				8BD61E171D8C3EE800B96081 /* Story.swift */,
+				8BD61E191D8D87D100B96081 /* GoogleCloudStorage.swift */,
 			);
 			path = reelyApp;
 			sourceTree = "<group>";
@@ -187,12 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B71395A61D0375E50042CBC1 /* Build configuration list for PBXNativeTarget "reelyApp" */;
 			buildPhases = (
-				595B273EE30606E799A26A05 /* 📦 Check Pods Manifest.lock */,
+				595B273EE30606E799A26A05 /* [CP] Check Pods Manifest.lock */,
 				B71395771D0375E50042CBC1 /* Sources */,
 				B71395781D0375E50042CBC1 /* Frameworks */,
 				B71395791D0375E50042CBC1 /* Resources */,
-				C400921FDC7DC95147A3FFC9 /* 📦 Embed Pods Frameworks */,
-				0FEC9752331F033BF6678254 /* 📦 Copy Pods Resources */,
+				C400921FDC7DC95147A3FFC9 /* [CP] Embed Pods Frameworks */,
+				0FEC9752331F033BF6678254 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B71395A91D0375E50042CBC1 /* Build configuration list for PBXNativeTarget "reelyAppTests" */;
 			buildPhases = (
-				AC979D72F13E8EF447A5C599 /* 📦 Check Pods Manifest.lock */,
+				AC979D72F13E8EF447A5C599 /* [CP] Check Pods Manifest.lock */,
 				B713958E1D0375E50042CBC1 /* Sources */,
 				B713958F1D0375E50042CBC1 /* Frameworks */,
 				B71395901D0375E50042CBC1 /* Resources */,
-				AAB9E470A8E8E0013EDFF8AB /* 📦 Embed Pods Frameworks */,
-				D1163EBC1A3491572F815056 /* 📦 Copy Pods Resources */,
+				AAB9E470A8E8E0013EDFF8AB /* [CP] Embed Pods Frameworks */,
+				D1163EBC1A3491572F815056 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,11 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B71395AC1D0375E50042CBC1 /* Build configuration list for PBXNativeTarget "reelyAppUITests" */;
 			buildPhases = (
-				958EA854A2249D5D52BA0B1E /* 📦 Check Pods Manifest.lock */,
+				958EA854A2249D5D52BA0B1E /* [CP] Check Pods Manifest.lock */,
 				B71395991D0375E50042CBC1 /* Sources */,
 				B713959A1D0375E50042CBC1 /* Frameworks */,
 				B713959B1D0375E50042CBC1 /* Resources */,
-				D4234AAAC2B7FC2611304B30 /* 📦 Copy Pods Resources */,
+				D4234AAAC2B7FC2611304B30 /* [CP] Copy Pods Resources */,
+				2AC2CC1585B73FB8898D095F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,14 +332,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FEC9752331F033BF6678254 /* 📦 Copy Pods Resources */ = {
+		0FEC9752331F033BF6678254 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,44 +347,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reelyApp/Pods-reelyApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		595B273EE30606E799A26A05 /* 📦 Check Pods Manifest.lock */ = {
+		2AC2CC1585B73FB8898D095F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reelyAppUITests/Pods-reelyAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		958EA854A2249D5D52BA0B1E /* 📦 Check Pods Manifest.lock */ = {
+		595B273EE30606E799A26A05 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AAB9E470A8E8E0013EDFF8AB /* 📦 Embed Pods Frameworks */ = {
+		958EA854A2249D5D52BA0B1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB9E470A8E8E0013EDFF8AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,29 +407,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reelyAppTests/Pods-reelyAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC979D72F13E8EF447A5C599 /* 📦 Check Pods Manifest.lock */ = {
+		AC979D72F13E8EF447A5C599 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C400921FDC7DC95147A3FFC9 /* 📦 Embed Pods Frameworks */ = {
+		C400921FDC7DC95147A3FFC9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,14 +437,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reelyApp/Pods-reelyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1163EBC1A3491572F815056 /* 📦 Copy Pods Resources */ = {
+		D1163EBC1A3491572F815056 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,14 +452,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reelyAppTests/Pods-reelyAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4234AAAC2B7FC2611304B30 /* 📦 Copy Pods Resources */ = {
+		D4234AAAC2B7FC2611304B30 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,9 +474,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD61E181D8C3EE800B96081 /* Story.swift in Sources */,
 				8B006FB71D8B581D005BD956 /* ProfileViewController.swift in Sources */,
 				B71395811D0375E50042CBC1 /* ViewController.swift in Sources */,
 				8BF55BC11D89C56B00CD2D49 /* Eddystone.swift in Sources */,
+				8BD61E1A1D8D87D100B96081 /* GoogleCloudStorage.swift in Sources */,
 				8B006FB51D8B4145005BD956 /* UserHandler.swift in Sources */,
 				B71395871D0375E50042CBC1 /* reelyApp.xcdatamodeld in Sources */,
 				B713957F1D0375E50042CBC1 /* AppDelegate.swift in Sources */,
