@@ -204,7 +204,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ4-MI-ZDL">
-                                <rect key="frame" x="0.0" y="261" width="320" height="52"/>
+                                <rect key="frame" x="0.0" y="257" width="320" height="52"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="2zb-WR-otb"/>
@@ -246,8 +246,8 @@
                                     <outletCollection property="gestureRecognizers" destination="1G6-y7-r5y" appends="YES" id="XzY-dL-Rdm"/>
                                 </connections>
                             </imageView>
-                            <label userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to become discoverable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-BG-QnI">
-                                <rect key="frame" x="0.0" y="517" width="320" height="50"/>
+                            <label userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click to become discoverable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-BG-QnI">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.050980392159999999" green="0.30980392159999998" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TXc-fD-BDp"/>
@@ -274,19 +274,22 @@
                             <constraint firstAttribute="bottom" secondItem="3u8-BG-QnI" secondAttribute="bottom" id="7NW-5H-Vk8"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerX" secondItem="y06-3G-w46" secondAttribute="centerX" id="849-t2-OfU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hlE-Il-1B6" secondAttribute="trailing" constant="40" id="APv-cU-cjn"/>
+                            <constraint firstAttribute="trailing" secondItem="3u8-BG-QnI" secondAttribute="trailing" id="FhT-lO-zR5"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="NPg-YV-pq3"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerY" secondItem="VCB-wE-Geq" secondAttribute="centerY" id="UUL-7C-BfZ"/>
                             <constraint firstItem="ZIB-dz-CWv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="YvF-ka-JjR"/>
                             <constraint firstItem="jQ4-MI-ZDL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aWG-SW-Tz8"/>
                             <constraint firstItem="3u8-BG-QnI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="asC-F4-c3Z"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="bz1-HP-ssi"/>
-                            <constraint firstItem="jQ4-MI-ZDL" firstAttribute="top" secondItem="hlE-Il-1B6" secondAttribute="bottom" constant="13" id="dQA-pV-kIj"/>
+                            <constraint firstItem="jQ4-MI-ZDL" firstAttribute="top" secondItem="hlE-Il-1B6" secondAttribute="bottom" constant="9" id="dQA-pV-kIj"/>
                             <constraint firstItem="jQ4-MI-ZDL" firstAttribute="centerX" secondItem="hlE-Il-1B6" secondAttribute="centerX" constant="1" id="dwK-kP-M54"/>
+                            <constraint firstAttribute="bottom" secondItem="3u8-BG-QnI" secondAttribute="bottom" id="kFR-Qf-XpP"/>
                             <constraint firstItem="ZIB-dz-CWv" firstAttribute="centerX" secondItem="hlE-Il-1B6" secondAttribute="centerX" constant="1" id="lSv-9d-oRA"/>
                             <constraint firstItem="jQ4-MI-ZDL" firstAttribute="centerX" secondItem="ZIB-dz-CWv" secondAttribute="centerX" id="pPR-UW-H0j"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZIB-dz-CWv" secondAttribute="bottom" constant="68" id="qq7-uw-Wor"/>
                             <constraint firstItem="jQ4-MI-ZDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wyo-gA-Jm6"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="x7Y-FV-PsW"/>
+                            <constraint firstItem="3u8-BG-QnI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xUc-hW-tz1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
