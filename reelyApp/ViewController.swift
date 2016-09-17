@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var createProfileLabel: UILabel!
     @IBOutlet weak var getStartedLabel: UILabel!
     
-    var isAnonymouslyAdvertising: Bool = false;
+    var isAdvertising: Bool = false;
     let beaconManager: RABeaconManager = RABeaconManager();
     let reelyUUID = "7265656C-7941-7070-2066-6f7220694f53";
     
@@ -37,21 +37,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        statusLabel.hidden = true;
+        statusLabel.hidden = false;
         createProfileLabel.hidden = true;
         getStartedLabel.hidden = true;
 
         detectMeButton.layer.cornerRadius = 5; // this value vary as per your desire
         detectMeButton.clipsToBounds = true;
         
-        self.view.backgroundColor = UIColor(red:0.03, green:0.44, blue:0.64, alpha:1.00)
+        self.view.backgroundColor = UIColor(red:0.03, green:0.44, blue:0.64, alpha:1.00);
         self.barnowlImage.layer.cornerRadius = 100
         self.barnowlImage.layer.masksToBounds = true
         self.barnowlImage.contentMode = .ScaleAspectFill;
         self.barnowlImage.layer.borderWidth = 12;
         self.barnowlImage.layer.borderColor = UIColor(red:0.22, green:0.55, blue:0.71, alpha:1.00).CGColor;
         updateUI();
-//        userHandler.uploadImage();
         
     }
     
@@ -69,6 +68,7 @@ class ViewController: UIViewController {
         createProfileLabel.hidden = hasProfile;
         getStartedLabel.hidden = hasProfile;
         detectMeButton.hidden = !hasProfile;
+        statusLabel.hidden = false;
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,18 +83,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func detectMeButtonClicked(sender: AnyObject) {
-        statusLabel.hidden = true;
-        if (isAnonymouslyAdvertising) {
-            isAnonymouslyAdvertising = false;
+        if (isAdvertising) {
+            isAdvertising = false;
             detectMeButton.backgroundColor = UIColor(red:1.00, green:0.41, blue:0.00, alpha:1.00)
             detectMeButton.setTitle("ADVERTISE ME!", forState: UIControlState.Normal)
+            statusLabel.text = "Click to become discoverable."
             stopAdvertising()
         } else {
-            isAnonymouslyAdvertising = true;
+            isAdvertising = true;
             detectMeButton.backgroundColor = UIColor(red:0.02, green:0.34, blue:0.47, alpha:1.00);
             detectMeButton.setTitle("((( ADVERTISING )))", forState: UIControlState.Normal)
             startAdvertising()
-
+            statusLabel.text = "Your are currently discoverable."
         }
     }
     
