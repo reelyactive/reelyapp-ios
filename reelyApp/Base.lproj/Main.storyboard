@@ -219,13 +219,13 @@
                                     <outletCollection property="gestureRecognizers" destination="ntG-u6-Xju" appends="YES" id="AGg-7i-yCR"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Create a Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-wE-Geq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCB-wE-Geq">
                                 <rect key="frame" x="79" y="134" width="162" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.66274509803921566" green="0.77647058823529413" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap the bubble to get started." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y06-3G-w46">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tap the bubble to get started." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y06-3G-w46">
                                 <rect key="frame" x="36" y="349" width="247" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.66274509800000003" green="0.77647058820000003" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,8 +275,10 @@
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerX" secondItem="y06-3G-w46" secondAttribute="centerX" id="849-t2-OfU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hlE-Il-1B6" secondAttribute="trailing" constant="40" id="APv-cU-cjn"/>
                             <constraint firstAttribute="trailing" secondItem="3u8-BG-QnI" secondAttribute="trailing" id="FhT-lO-zR5"/>
+                            <constraint firstItem="ZIB-dz-CWv" firstAttribute="top" secondItem="y06-3G-w46" secondAttribute="top" constant="5" id="NLt-mB-px1"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="NPg-YV-pq3"/>
                             <constraint firstItem="hlE-Il-1B6" firstAttribute="centerY" secondItem="VCB-wE-Geq" secondAttribute="centerY" id="UUL-7C-BfZ"/>
+                            <constraint firstItem="VCB-wE-Geq" firstAttribute="centerX" secondItem="hlE-Il-1B6" secondAttribute="centerX" id="XT0-uZ-4uo"/>
                             <constraint firstItem="ZIB-dz-CWv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="YvF-ka-JjR"/>
                             <constraint firstItem="jQ4-MI-ZDL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aWG-SW-Tz8"/>
                             <constraint firstItem="3u8-BG-QnI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="asC-F4-c3Z"/>

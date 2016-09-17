@@ -68,6 +68,11 @@ class ViewController: UIViewController {
         createProfileLabel.hidden = hasProfile;
         getStartedLabel.hidden = hasProfile;
         detectMeButton.hidden = !hasProfile;
+        if (hasProfile) {
+            statusLabel.text = "Tap button to become discoverable."
+        } else {
+            statusLabel.text = ""
+        }
         statusLabel.hidden = false;
     }
     
@@ -87,7 +92,7 @@ class ViewController: UIViewController {
             isAdvertising = false;
             detectMeButton.backgroundColor = UIColor(red:1.00, green:0.41, blue:0.00, alpha:1.00)
             detectMeButton.setTitle("ADVERTISE ME!", forState: UIControlState.Normal)
-            statusLabel.text = "Click to become discoverable."
+            statusLabel.text = "Tap button to become discoverable."
             stopAdvertising()
         } else {
             isAdvertising = true;
